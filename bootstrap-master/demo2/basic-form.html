@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--响应设备宽度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>导航条</title>
+    <!--shortcut icon-->
+    <link rel="shortcut icon" href="../res/image/Bootstrap.png">
+    <link rel="stylesheet" href="../res/css/bootstrap.css">
+    <link rel="stylesheet" href="../res/fonts/Font-Awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/menu.css">
+    <link rel="stylesheet" href="../res/css/jquery-simplecolorpicker/jquery.simplecolorpicker.css">
+    <link rel="stylesheet" href="../res/css/jquery-simplecolorpicker/jquery.simplecolorpicker-regularfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../res/css/icheck-1.x/skins/all.css">
+    <link rel="stylesheet" href="../res/css/default2.css">
+
+
+</head>
+<body>
+<div class="container all">
+<nav class="navbar navbar-default " role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"><i class="fa fa-diamond" style="b"></i> </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../res/image/user3.png" alt="头像"></i>&nbsp;&nbsp;欢迎您！本人<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                   <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;注销</a></li>
+                   <li><a href="lock.html"><i class="fa fa-lock"></i>&nbsp;&nbsp;锁定屏幕</a></li>
+                   <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;查看个人资料</a></li>
+                 </ul>
+            </li>
+             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i>&nbsp;&nbsp;消息
+            <label class="label label-danger">3</label>
+             <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-pink">
+                  <li class="header"><i class="fa fa-plus"></i><strong>5条消息</strong> </li>
+                <li><a href="#"><i class="fa-style-circle fa-pink fa fa-comment"></i>新闻编辑 <span class="pull-right badge badge-primary pull-righ">+12</span></a></li>
+                <li><a href="#"><i class="fa-style-circle  fa-primary fa fa-user"></i>切换为编辑用户登录</a></li>
+                <li><a href="#"><i class="fa-style-circle fa-success fa fa-bus"></i>新订单 <span class="pull-right badge badge-success">+8</span></a></li>
+                <li class="footer"><a href="#">查看所有通知 <i class="fa fa-arrow-right"></i></a></li>
+                 </ul>
+            </li>
+
+             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-glass"></i>&nbsp;&nbsp;任务
+            <label class="label label-danger">4</label>
+             <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-grey">
+                  <li class="header"><i class="fa fa-check"></i><strong>4个任务</strong> </li>
+                <li>
+                    <span class="task-title">个人任务</span>
+                    <label class="task-label ">40%</label>
+                   <div class="progress progress-sm" >
+                        <div class="progress-bar" role="progressbar" aria-valuemin="0" 
+                            aria-valuemax="100" aria-valuenow="40" style="width: 40%;">
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <span class="task-title">部署</span>
+                    <label class="task-label ">20%</label>
+                   <div class="progress progress-sm" >
+                        <div class="progress-bar  progress-bar-warning" role="progressbar" aria-valuemin="0" 
+                            aria-valuemax="100" aria-valuenow="20" style="width: 20%;">
+                        </div>
+                    </div>
+                </li>
+                 <li>
+                    <span class="task-title">上传进度</span>
+                    <label class="task-label ">98%</label>
+                   <div class="progress progress-sm" >
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" 
+                            aria-valuemax="100" aria-valuenow="98" style="width: 98%;">
+                        </div>
+                    </div>
+                </li>
+                 <li>
+                    <span class="task-title">流程控制</span>
+                    <label class="task-label ">70%</label>
+                   <div class="progress progress-sm" >
+                        <div class="progress-bar  progress-bar-info" role="progressbar" aria-valuemin="0" 
+                            aria-valuemax="100" aria-valuenow="70" style="width: 70%;">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-title">表图</span>
+                    <label class="task-label ">70%</label>
+                   <div class="progress progress-sm active" >
+                        <div class="progress-bar  progress-bar-striped" role="progressbar" aria-valuemin="0" 
+                            aria-valuemax="100" aria-valuenow="70" style="width: 70%;">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">查看所有工作任务<i class="fa fa-arrow-circle-o-right pull-right" ></i></a></li>
+                 </ul>
+            </li>
+
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"  title="提示消息"><i class="fa fa-bell"></i>
+                <span class="caret"></span>
+            </a>
+                <ul class="dropdown-menu dropdown-pink">
+                    <li class="header"><i class="fa fa-plus"></i>3条提示信息</li>
+                    <li>
+                        <a href="#" class="media">
+                        <span class="pull-left" href="#">
+                            <img class="media-object" src="../res/image/user2.png" alt="Image">
+                        </span>
+                        <div class="media-body">
+                            <h5 class="media-heading">Media heading <span class="pull-right">just now</span></h5>
+                            <p>Text goes here...</p>
+                        </div>
+                    </a>
+                    </li>
+                  <li>
+                        <a href="#" class="media">
+                        <span class="pull-left" href="#">
+                            <img class="media-object" src="../res/image/user2.png" alt="Image">
+                        </span>
+                        <div class="media-body">
+                            <h5 class="media-heading">Media heading <span class="pull-right">just now</span></h5>
+                            <p>Text goes here...</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#" class="media">
+                        <span class="pull-left" href="#">
+                            <img class="media-object" src="../res/image/user3.png" alt="Image">
+                        </span>
+                        <div class="media-body">
+                            <h5 class="media-heading">Media heading <span class="pull-right">16秒前</span></h5>
+                            <p>Text goes here...</p>
+                        </div>
+                    </a>
+                    </li>
+                     <li><a href="#">更多信息<i class="fa fa-arrow-circle-o-right pull-right" ></i></a></li>
+                </ul>
+
+            </li>
+
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i>&nbsp;&nbsp;设置 <i class="caret"></i></a>
+             <ul class="dropdown-menu setting" id="setting">
+                 <li>皮肤选择<select name="colorpicker">
+                     <option value="#f8f8f8">default</option>
+                     <option value="#222">inverse</option>
+                 </select></li>
+                 <li>
+                     <input type="checkbox" id="fixed-navbar"/>固定导航栏
+                 </li>
+                 <li> <input type="checkbox" id="fixed-sidebar"/>固定侧边栏</li>
+                 <li> <input type="checkbox" id="fixed-breadcrumb"/>固定面包纸导航</li>
+                 <li> <input type="checkbox" id="inside"/>inside .container</li>
+             </ul>
+            </li>
+            
+             <li><a href="#"><i class="fa fa-hourglass fa-spin"></i>&nbsp;&nbsp;系统时间：<label class="time"></label></a></li>
+             
+
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="搜索..">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
+
+  <!-- sidebar -->
+  <aside class="sidebar navbar-default sidebar-skin-1 ">
+<div class="sidebar-toggle ">
+<!-- <div class="sidebar-toggle-text pull-left">菜单栏</div> -->
+
+       <button  type="button" class="btn btn-default pull-right navbar-toggle  sidebar-close"
+        >
+           <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+       </button>
+    <button  type="button" class="btn btn-default pull-right navbar-toggle sidebar-open"
+            >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+
+  <!--</div>     -->
+   <nav class="sidebar-nav">
+            <ul class="metismenu" id="menu">
+                <li ><a href="navbar.html">
+                    <span class="sidebar-nav-item-icon fa fa-dashboard"></span>
+                    <span class="sidebar-nav-item">控制台</span>
+                </a></li>
+                <li><a href="menu1.html">
+                    <span class="sidebar-nav-item-icon fa fa-text-width"></span>
+                    <span class="sidebar-nav-item">文字排版</span>
+                </a></li>
+                <li class="has-sub">
+                    <a href="#" aria-expanded="true" >
+                        <span class="sidebar-nav-item-icon fa fa-desktop"></span>
+                        <span class="sidebar-nav-item">UI组件</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="true" class="submenu">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-nav-item-icon fa fa-code-fork"></span>
+                                组件
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-nav-item-icon fa fa-star"></span>
+                                Star
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/onokumus/metisMenu/issues">
+                                <span class="sidebar-nav-item-icon fa fa-exclamation-triangle"></span>
+                                Issues
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="#" aria-expanded="false">
+                        <span class="sidebar-nav-item-icon fa fa-edit fa-sm"></span>
+                        <span class="sidebar-nav-item">表单</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="submenu">
+                        <li>
+                            <a href="basic-form.html">基础表单</a>
+                        </li>
+                        <li>
+                            <a href="#">item 0.2</a>
+                        </li>
+                        <li>
+                            <a href="http://onokumus.com">onokumus</a>
+                        </li>
+                        <li>
+                            <a href="#">item 0.4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="#" aria-expanded="false">
+                        <span class="sidebar-nav-item-icon fa fa-edit fa-sm"></span>
+                        <span class="sidebar-nav-item">日历</span>
+                        <span class="badge badge-square badge-danger pull-right">5</span>
+                    </a>
+                    <ul aria-expanded="false" class="submenu">
+                        <li>
+                            <a href="menu6.html">item 1.1</a>
+                        </li>
+                        <li>
+                            <a href="#">item 1.2</a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#" aria-expanded="false">
+                                Menu 1.3
+                                <span class="fa plus-times"></span>
+                            </a>
+                            <ul aria-expanded="false" class="submenu">
+                                <li>
+                                    <a href="menu7.html">item 1.3.1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 1.3.2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 1.3.3</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 1.3.4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">item 1.4</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false">
+                                Menu 1.5
+                                <span class="fa plus-minus"></span>
+                            </a>
+                            <ul aria-expanded="false">
+                                <li>
+                                    <a href="#">item 1.5.1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 1.5.2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 1.5.3</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 1.5.4</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" aria-expanded="false">
+                        <span class="sidebar-nav-item-icon fa fa-calculator fa-sm"></span>
+                        <span class="sidebar-nav-item">日历</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="#"><i class="fa fa-android fa-sm"></i>&nbsp;&nbsp;&nbsp;&nbsp;item 2.1</a>
+                        </li>
+                        <li>
+                            <a href="#">item 2.2</a>
+                        </li>
+                        <li>
+                            <a href="#">item 2.3</a>
+                        </li>
+                        <li>
+                            <a href="#">item 2.4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="layout.html"><span class="sidebar-nav-item-icon fa fa-cubes fa-sm"></span><span class="sidebar-nav-item">布局</span></a></li>
+                <li><a href="panel.html"><span class="sidebar-nav-item-icon fa fa-fax fa-sm"></span><span class="sidebar-nav-item">面板</span></a></li>
+            </ul>
+        </nav>    
+</aside><!--/，end sidebar-->
+  <!-- content -->
+  <div class="content">
+        <ul class="breadcrumb ">
+          <li><a href="navbar.html">控制台</a></li>
+           <li><a href="#">表单</a></li>
+          <li><a href="basic-form.html">基础表单</a></li>
+      </ul>
+      <div class="sidebar-signed pull-right">
+        <a href="#"><i class="fa fa-bars"></i></a>
+      </div>
+      <div class="maincontent">
+          <div class="panel panel-default">
+          <div class="panel-body">
+             Basic panel example
+
+          </div>
+      </div>
+      </div>
+ </div> <!-- /.content -->   
+</div>
+<a href="#top" id="goTop"><i class="fa fa-angle-double-up"></i></a>
+<script type="text/javascript" src="../res/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../res/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../res/js/metisMenu/metisMenu.min.js"></script>
+<script src="../res/css/jquery-simplecolorpicker/jquery.simplecolorpicker.js"></script>
+<script type="text/javascript" src="../res/js/icheck-1.x/icheck.min.js"></script>
+<script type="text/javascript" src="../res/js/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="../res/js/default2.js"></script>
+<script type="text/javascript" src="../res/js/style2.js"></script>
+<script type="text/javascript" src="../res/js/time.js"></script>
+<script type="text/javascript">
+    $(function(){
+    
+
+
+
+    })
+</script>
+</body>
+</html>

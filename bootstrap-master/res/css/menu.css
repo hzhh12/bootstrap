@@ -1,0 +1,195 @@
+.sidebar
+{
+    display: block;
+    float: left;
+    position: absolute;
+    width: 220px;
+    z-index: 16;
+    background: #222;
+}
+
+.metismenu>li[class*=active] a{
+background-color: rgba(255, 255, 255, .1);
+}
+.metismenu>li[class*=active]>a{
+background-color: #222;
+}
+.sidebar-nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav a,
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a:active
+{
+    outline: none;
+}
+.sidebar-nav ul li,
+.sidebar-nav ul a
+{
+    display: block;
+}
+.sidebar-nav ul a
+{
+    padding: 10px 20px;
+    color: #aaa;
+     border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+.sidebar .metismenu li:first-child{
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+.sidebar-nav ul a:hover,
+.sidebar-nav ul a:focus,
+.sidebar-nav ul a:active
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav ul li a:active
+{
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar-nav ul ul a
+{
+    background-color: rgba(255, 255, 255, .1);
+}
+.sidebar-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,
+.sidebar-nav ul ul a:active
+{
+    background-color: rgba(255, 255, 255, .2);
+}
+.sidebar-nav-item
+{
+    padding-left: 5px;
+}
+.sidebar-nav-item-icon
+{
+    padding-right: 5px;
+}
+#rtlh3 small
+{
+    display: inline-block;
+    transform: rotateY(180deg);
+}
+
+
+
+
+/*侧边菜单收缩后悬停显示*/
+@media (min-width:768px) {
+    .min-sidebar .metismenu>li>a>.sidebar-nav-item +span{
+        display:none;
+    }
+    .min-sidebar .metismenu>li>a {
+        position: relative;
+        height:40px;
+
+    }
+    .min-sidebar .metismenu>li>a>.sidebar-nav-item-icon{
+        position:absolute;
+        left:0;
+        top:0;
+        line-height:38px;
+        padding-left:18px
+    }
+    .min-sidebar .metismenu>li>a>.sidebar-nav-item {
+        display:none;
+        position:absolute;
+        left:50px;
+        top:0px;
+        width:200px;
+        height:40px;
+        line-height:38px;
+        background-color:#222;
+    }
+    .min-sidebar .metismenu>li:hover>a>.sidebar-nav-item{
+        display:block;
+    }
+
+    .min-sidebar.sidebar .metismenu li {
+        position: relative;
+    }
+    .min-sidebar.sidebar .metismenu > li >ul {
+        position: absolute;
+        left: 100%;
+        min-width: 200px;
+        display: none;
+    }
+    .min-sidebar.sidebar .metismenu > li >ul ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        min-width: 200px;
+        display: none;
+    }
+    .min-sidebar.sidebar .metismenu li:hover > ul,
+    .min-sidebar.sidebar .metismenu li:hover > ul.collapse {
+        display: block !important;
+        height: auto !important;
+        background: #444;
+        visibility: visible;
+    }
+    .metismenu > li a:hover
+    {
+        color: #fff;
+    }
+    /*布局sidebar和maincontent之间层关系*/
+    .sidebar{z-index:121;}
+    .maincontent{z-index:110;}
+    /*侧边栏*/
+    .sidebar-nav{
+        margin-top:50px;
+    }
+  /*  安装皮肤default后菜单收缩后菜单样式*/
+    .sidebar-skin-1.min-sidebar .metismenu>li a{
+        background-color:#f8f8f8;
+        border-left: 1px solid #ccc;
+    }
+    .sidebar-skin-1.min-sidebar .metismenu>li[class*=active]>a{
+       /* background-color: #f8f8f8;*/
+    }
+
+    .sidebar-skin-1.min-sidebar .metismenu>li[class*=active] a{
+        border-left: 1px solid #ccc;
+    }
+    .sidebar-skin-1.min-sidebar .metismenu>li:hover:not(.select)> a>.sidebar-nav-item,
+    .sidebar-skin-1.min-sidebar .metismenu>li:hover:not(.select)> a{
+        background-color:#ccc;
+        border: 1px solid #CCCCCC;
+    }
+    .sidebar-skin-1.min-sidebar .metismenu>li.select:hover> a>.sidebar-nav-item{
+        background-color:#27a9e3;
+    }
+}
+
+ /*激活后菜单显示样式*/
+.sidebar .metismenu > li[class*=select] > a { background-color: #27a9e3; color: #fff; position: relative;}
+.sidebar .submenu li[class*=select] > a { color: #27a9e3 !important; }
+
+ /*default皮肤*/
+.sidebar-skin-1{
+    background: #f8f8f8;
+}
+.sidebar-skin-1 .sidebar-nav ul a{
+    color: #777;
+    padding: 10px 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.sidebar-skin-1 .sidebar-nav ul a:hover{
+    color: #000000;
+}
+.sidebar-skin-1 .metismenu>li[class*=active] a{
+    border-left: 3px solid green;
+}
+.sidebar-skin-1 .metismenu>li[class*=active]:not(.select)>a{
+    background-color: #ccc;
+}
+.sidebar-skin-1.sidebar .metismenu li:first-child{
+    border-top:1px solid #ccc;
+}

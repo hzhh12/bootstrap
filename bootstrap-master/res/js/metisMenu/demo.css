@@ -1,0 +1,115 @@
+.sidebar
+{
+    display: block;
+    left:0;
+    width: 220px; 
+    height: auto;
+   position: absolute;
+   float: left;
+    background: #333; 
+}
+.all { margin-left: 220px;  padding-left: 0; padding-right: 0;z-index: 20; }
+.content
+    { width: 100%; height: 100%; margin: 0 auto; min-width: 320px !important; overflow-x: hidden; }
+
+.header
+{
+    padding: 10px;
+}
+.header a
+{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #aaa;
+}
+.header a:hover
+{
+    color: #fff;
+}
+
+.metismenu>li[class*=active] a{
+background-color: rgba(255, 255, 255, .1);
+}
+.metismenu>li[class*=active]>a{
+background-color: #222
+
+;
+}
+
+.skin-line-1> li.active
+{
+    border-left: 5px solid green;
+}
+
+.sidebar-nav ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.sidebar-nav a,
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a:active
+{
+    outline: none;
+}
+.sidebar-nav ul li,
+.sidebar-nav ul a
+{
+    display: block;
+}
+.sidebar-nav ul a
+{
+    padding: 10px 20px;
+
+    color: #aaa;
+    /* border-bottom: 1px solid rgba(0, 0, 0, .3); */
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .05) inset;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+}
+.sidebar-nav ul a:hover,
+.sidebar-nav ul a:focus,
+.sidebar-nav ul a:active
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav ul li a:active
+{
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar-nav ul ul a
+{
+   
+
+    background-color: rgba(255, 255, 255, .1);
+}
+.sidebar-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,
+.sidebar-nav ul ul a:active
+{
+    background-color: rgba(255, 255, 255, .2);
+}
+.sidebar-nav-item
+{
+    padding-left: 5px;
+}
+.sidebar-nav-item-icon
+{
+    padding-right: 5px;
+}
+#rtlh3 small
+{
+    display: inline-block;
+
+    transform: rotateY(180deg);
+}
+
+
